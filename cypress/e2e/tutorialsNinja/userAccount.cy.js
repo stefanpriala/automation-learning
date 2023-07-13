@@ -52,7 +52,7 @@ it('validate that user can add an item to wishlist', ()=>{
   cy.userLogin(email, password)
   cy.visit('https://tutorialsninja.com/demo/index.php?route=product/category&path=57')
 
-  cy.get('[data-original-title="Add to Wish List"]').click()
+  cy.get('[data-original-title="Add to Wish List"]').click() 
 
   cy.get('.alert').should('be.visible').contains('Success: You have added Samsung Galaxy Tab 10.1 to your wish list!')
 
